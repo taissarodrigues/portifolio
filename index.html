@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body id="body">
+    <nav id="desktop-nav">
+        <div class="logo">Taissa Rodrigues</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Taissa Rodrigues</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+             <div class="menu-links">
+          <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experiencia" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="perfil">
+        <div class="section_foto-container">
+            <img src="./img/foto-perfil3.png" alt="Taissa Rodrigues foto perfil">
+        </div>
+        <div class="section_texto">
+            <p class="section_texto_p1">Hello, I'am</p>
+            <h1 class="titulo">Taissa Rodrigues</h1>
+            <p class="section_texto_p2">Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./img/resume-example.pdf')"
+                > Dowload CV
+            </button>
+            <!-- <button class="btn-color-1" onclick=" location.href='./#contato'"> -->
+            </button>
+            </div>
+            <div id="redes_sociais-container">
+                <img
+                src="./img/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                onclick="location.href='https://linkedin.com/'"
+              />
+              <img
+                src="./img/github.png"
+                alt="My Github profile"
+                class="icon"
+                onclick="location.href='https://github.com/'"
+              />
+
+            </div>
+
+      
+
+    </section>
+    <section id="Sobre">
+        <p class="section_texto_p1">Conheça mais</p>
+        <h1 class="titulo">Sobre mim</h1>
+        
+         <div class="sobre-detalhes-container">
+            <div class="sobre-containers">
+              <div class="detalhes-container">
+                <img
+                  src="./img/experiencia.png"
+                  alt="Extensão icone"
+                  class="icon"
+                />
+                <h3>Projetos de Extensão</h3>
+              <p>1+ ano<br/> Centro Academico de Engenharia de Telecomunicações <br>Departamento de Marketing e Branding-DMB</p>
+            </div>
+            
+            <div class="detalhes-container">
+              <img
+                src="./img/educação.png"
+                alt="Educação icon "
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>Cursando o 3º semestre de Engenharia de Telecomunicações<br />Instituto Federal  de Educação, Ciência e Tecnologia do Ceará</p>
+            </div>
+          </div>
+          <div class="texto-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur !
+            </p>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+    <section id="skills">
+        <p class="section_texto_p1">Explore my</p>
+        <h1 class="titulo">Habilidades</h1>
+        <div class="hardskill-detalhes-container">
+        <div class="sobre-containers">
+        <div class="detalhes-container">
+        <h2 class="hardskills-sub-titulo">Hard Skills</h2>
+        <div class="article-container">
+            <article>
+                <img src="./img/css.png" alt="hardskills icon" class="icon">
+                <div>
+                    <h3>CSS</h3>
+                    
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./img/html.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                <div>
+                    <h3>HTML</h3>
+                </div>
+                </article>
+                <article>
+                  <img
+                    src="./img/js.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Javascript</h3>
+                </div>
+
+            </article>
+            <article>
+              <img
+                src="./img/c.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>C</h3>
+            </div>
+               
+                </article>
+                <article>
+                  <img
+                    src="./img/swift.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Swift</h3>
+                </div>
+            </article>
+            <article>
+              <img
+                src="./img/figma.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Figma</h3>
+            </div>
+        </article>
+    </div>
+</div>
+        <div class="detalhes-container">
+            <h2 class="hardskills-sub-titulo">Soft Skills</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./img/checkmark.png" alt="Experince icon"
+                    class="icon">
+
+                            <div>
+                                <h3>Lorem ipsum!</h3>
+                            </div>
+                            </article>
+                            <article>
+                                <img src="./img/checkmark.png" alt="Experince icon"
+                                class="icon">
+    
+                            <div>
+                                <h3>Lorem ipsum!</h3>
+                            </div>
+                            </article>
+                            <article>
+                            <img src="./img/checkmark.png" alt="Experince icon"
+                            class="icon">
+        
+                            <div>
+                                <h3>Lorem ipsum!</h3>
+                            </div>
+                            </article>
+                            <article>
+                                <img src="./img/checkmark.png" alt="Experince icon"
+                                class="icon">
+            
+                                <div>
+                                    <h3>Lorem ipsum!</h3>
+        </div>
+        </article>
+        </div>
+ </div>
+  </div>
+   </div>
+   <img
+        src="./img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projetos'"
+      />
+
+
+    </section>
+    <section id="Projetos">
+      <p class="section_texto_p1">Navegar nos meus recentes<p>
+        <h1 class="titulo">Projetos</h1>
+           <div class="hardskill-detalhes-container">
+            <div class="sobre-containers">
+            <div class="detalhes-container color-container">
+              <div class="article-container">
+                <img 
+                    src="./img/project-1.png" 
+                    alt="Projeto 1"
+                    class="projeto-img"
+                    >
+                   </div>
+                   <h2 class="hardskills-sub-titulo projeto-titulo"> Projeto 1</h2>
+                   <div class="btn-container">
+                      <button class="btn btn-color-2 projeto-bnt"
+                        onclick="location.href='https://github.co,/'"
+                        >
+                        Github 
+                      </button>
+                      <button
+                        class="btn btn-color-2 projeto-bnt"
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                      
+                      
+                      </button>
+  
+                   </div>
+            </div>
+            <div class="detalhes-container color-container">
+              <div class="article-container">
+                <img 
+                    src="./img/project-2.png" 
+                    alt="Projeto 2"
+                    class="projeto-img"
+                    >
+                   </div>
+                   <h2 class="hardskills-sub-titulo projeto-titulo"> Projeto 2</h2>
+                   <div class="btn-container">
+                      <button class="btn btn-color-2 projeto-bnt"
+                        onclick="location.href='https://github.co,/'"
+                        >
+                        Github 
+                      </button>
+                      <button
+                        class="btn btn-color-2 projeto-bnt"
+                        onclick="location.href='https://github.com/'">
+                        Live Demo
+                      
+                      
+                      </button>
+  
+              </div>
+            </div>
+            
+          <div class="detalhes-container color-container">
+            <div class="article-container">
+                <img src="./img/project-3.png" alt="Projeto 3" class="projeto-img">
+            </div>
+            <h2 class="hardskills-sub-titulo projeto-titulo"> Projeto 3</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.co,/'"> Github </button>
+                <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/'"> Live Demo </button>
+            </div>
+        </div>
+     </div>
+   </div>
+   </div>
+   </section>
+   <section id="design">
+    <p class="section_texto_p1">Explore my</p>
+    <h1 class="titul>Design</h1>
+    <div class="hardskill-detalhes-container">
+      <div class="sobre-containers">
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./img/bottons.png" alt="Projeto 4" class="projeto-img">
+          </div>
+          <h2 class="hardskills-sub-titulo projeto-titulo">Projeto 4</h2>
+          
+        </div>
+        
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./img/bottons.png" alt="Projeto 5" class="projeto-img">
+          </div>
+          <h2 class="hardskills-sub-titulo projeto-titulo">Projeto 5</h2>
+          
+        </div>
+
+        
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./img/bottons.png" 
+                  alt="Projeto 6" 
+                  class="projeto-img">
+          </div>
+          <h2 class="hardskills-sub-titulo projeto-titulo">Projeto 6</h2>
+          
+        </div>
+      
+    </div>
+  </section>
+  
+    
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#Sobre">Sobre</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#Projetos">Projetos</a></li>
+              <!-- <li><a href="#Contato">Contato</a></li> -->
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Taissa Rodrigues. All Rights Reserved.</p>
+      </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html
+

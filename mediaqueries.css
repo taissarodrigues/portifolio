@@ -1,0 +1,113 @@
+@media screen and (max-width: 1400px) {
+  #perfil {
+    height: 83vh;
+    
+    margin-bottom: 96px;
+    /* background-image: url(./img/fundo.svg); */
+    background-size: cover;
+ }
+  .sobre-containers {
+    flex-wrap: wrap;
+  }
+  #contato,
+  #projetos,#desing {
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburguer-nav {
+      display: none;
+    }
+    #skills,
+    .hardskill-detalhes-container  {
+    margin-top: 2m;
+  }
+  #perfil,
+  .section-container {
+    display: block;
+   
+    background-image: url(./img/fundo.svg);
+    background-size: cover;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  /* section {
+    margin: 0 5%;
+  } */
+  .section_foto-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .sobre-containers {
+    margin-top: 0;
+    flex-wrap: wrap;
+      flex-direction: column; 
+      max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contato,
+  footer {
+    height: 40vh;
+  }
+  #perfil {
+    height: 83vh;
+    margin-bottom: 0;
+    background-image: url(./img/fundo.svg);
+    background-size: cover;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .sobre-containers,
+  .contato-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contato-info-container {
+    margin: 0;
+  }
+  .contato-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .hardskills-sub-titulo {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section_foto-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section_texto_p2 {
+    font-size: 1.25rem;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .texto-container {
+    text-align: justify;
+  }
+}
