@@ -429,6 +429,34 @@ footer {
 footer p {
   text-align: center;
 } 
+/* Animação */
+
+.github-icon {
+  transition: transform 0.3s ease;
+}
+
+.github-icon:hover {
+  transform: scale(1.5); /
+}
+
+
+.linkedin-icon {
+  transition: transform 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.5); /
+}
+*/
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.5); 
+}
+
+
 
 
 
