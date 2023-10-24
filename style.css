@@ -12,7 +12,7 @@ body {
  
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
+  
 } 
 
 
@@ -432,7 +432,7 @@ footer p {
 Animação
 
 .github-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 
 .github-icon:hover {
@@ -441,7 +441,7 @@ Animação
 
 
 .linkedin-icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 
 .linkedin-icon:hover {
@@ -449,7 +449,7 @@ Animação
 }
 */
 .icon {
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 
 .icon:hover {
