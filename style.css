@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(../img/fundo.svg);
+  background-image: url(../img/fundo2.png);
   
  
   background-repeat: no-repeat;
@@ -408,7 +408,7 @@ article .icon {
 .contato-info-container p {
   font-size: larger;
 }
-
+o
 .contato-icon {
   cursor: default;
 }
@@ -429,7 +429,7 @@ footer {
 footer p {
   text-align: center;
 } 
-/* Animação */
+Animação
 
 .github-icon {
   transition: transform 0.3s ease;

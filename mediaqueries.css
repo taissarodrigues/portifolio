@@ -29,7 +29,7 @@
   .section-container {
     display: block;
    
-    background-image: url(./img/fundo.svg);
+    background-image: url(./img/fundo2.png);
     background-size: cover;
   }
   .arrow {
@@ -61,7 +61,7 @@
   #perfil {
     height: 83vh;
     margin-bottom: 0;
-    background-image: url(./img/fundo.svg);
+    background-image: url(./img/fundo2.png);
     background-size: cover;
   }
   article {
