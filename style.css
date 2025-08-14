@@ -321,6 +321,102 @@ nav { height: 64px; }
 #About .detalhes-container .icon {
   filter: none !important;
 }
+.menu-links { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+.menu-links.open { max-height: 300px; }
+.hamburguer-icon.open span:nth-child(1){ transform: translateY(10px) rotate(45deg) }
+.hamburguer-icon.open span:nth-child(2){ opacity: 0 }
+.hamburguer-icon.open span:nth-child(3){ transform: translateY(-10px) rotate(-45deg) }
 
 
 
+/* ===== Correções de responsividade ===== */
+
+/* 1) Até 1400px: não force altura fixa no hero */
+@media (max-width: 1400px) {
+  #perfil {
+    height: auto !important;      /* elimina o “buraco” vertical */
+    margin-bottom: 48px;          /* respiro menor */
+    background: none !important;  /* evita imagem/artefatos */
+    padding-block: 2.5rem;        /* espaçamento equilibrado */
+  }
+}
+
+/* 2) Até 1200px: mostra o menu mobile e empilha o hero */
+@media (max-width: 1200px) {
+  #desktop-nav { display: none !important; }
+  #hamburguer-nav { display: flex !important; }
+
+  /* volta o grid do hero para 1 coluna, centralizado */
+  #perfil {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: center;
+    gap: 1.25rem;
+    height: auto !important;
+    background: none !important;
+  }
+  .section_foto-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 1rem;   /* centraliza a foto */
+  }
+  .section_texto { text-align: center; } /* centraliza textos */
+  
+  /* corrige o typo */
+  #skills, .hardskill-detalhes-container { margin-top: 2rem; }
+}
+
+/* 3) Até 600px: ajustes finos, sem altura fixa */
+@media (max-width: 600px) {
+  #perfil {
+    height: auto !important;
+    margin-bottom: 0;
+    padding-block: 1.25rem;
+    background: none !important;
+  }
+  .section_foto-container {
+    width: 54vw;            /* mantém proporcional no mobile */
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .section_texto_p2 { font-size: 1.1rem; }
+}
+
+/* Opcional: garante que o grid do hero volte ao desktop quando passar de 1024px */
+@media (min-width: 1024px) {
+  #perfil {
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(420px, 1fr);
+    column-gap: clamp(2rem, 6vw, 5rem);
+  }
+}
+
+.texto-container {
+  display: flex;
+  flex-direction: column; /* Alinha texto e botão na vertical */
+  align-items: center;    /* Centraliza horizontalmente */
+  justify-content: center;/* Centraliza verticalmente */
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.65;
+  color: var(--muted);
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.texto-container .btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--fg);
+  background: transparent;
+  color: var(--fg);
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.texto-container .btn:hover {
+  background: var(--fg);
+  color: var(--bg);
+  transform: scale(1.05);
+}

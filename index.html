@@ -18,22 +18,21 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburguer-nav">
-        <div class="logo">Taissa Rodrigues</div>
-        <div class="hamburguer-menu">
-            <div class="hamburguer-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#About" onclick="toggleMenu()">Sobre</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Habilidades</a></li>
-                <li><a href="#Projects" onclick="toggleMenu()">Projetos</a></li>
-                <li><a href="#Contact" onclick="toggleMenu()">Contato</a></li>
-            </div>
-        </div>
-    </nav>
+  <nav id="hamburguer-nav">
+  <div class="logo">Taissa Rodrigues</div>
+  <div class="hamburguer-menu">
+    <button class="hamburguer-icon" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="menu-links">
+      <li><a href="#About">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#Projects">Projetos</a></li>
+      <li><a href="#Contact">Contato</a></li>
+    </div>
+  </div>
+</nav>
+
 
     <section id="perfil">
         <div class="section_foto-container">
@@ -81,13 +80,18 @@
                     </p>
                 </div>
             </div>
-            <div class="texto-container">
-                <p>
-                    Sou desenvolvedora de software dedicada e apaixonada por criar soluções inovadoras com foco em usabilidade e impacto social.  
-                    Tenho experiência sólida em desenvolvimento iOS utilizando Swift, SwiftUI e UIKit, além de realidade aumentada com ARKit, computação espacial com VisionOS e desenvolvimento front-end web com React e Tailwind CSS.  
-                    Também atuo liderando iniciativas para fortalecer a comunidade tech local.
-                </p>
-            </div>
+           <div class="texto-container">
+    <p>
+        Sou desenvolvedora de software com experiência em projetos mobile e web, 
+        participando de iniciativas que unem tecnologia e inovação. Gosto de aprender 
+        novas ferramentas e trabalhar em equipe para criar soluções eficientes.
+    </p>
+    
+    <a href="./Taissa_Rodrigues_Curriculo.pdf" download class="btn">
+        Baixar Currículo
+    </a>
+</div>
+
         </div>
     </section>
 
@@ -128,132 +132,133 @@
         </div>
     </section>
 
-<section id="Projects">
-    <p class="section_texto_p1">Explore meus trabalhos recentes</p>
-    <h1 class="titulo">Projetos</h1>
-    <div class="hardskill-detalhes-container">
-        <div class="sobre-containers">
+    <section id="Projects">
+        <p class="section_texto_p1">Explore meus trabalhos recentes</p>
+        <h1 class="titulo">Projetos</h1>
+        <div class="hardskill-detalhes-container">
+            <div class="sobre-containers">
 
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/underlined.jpeg" alt="Projeto Underlined" class="projeto-img" />
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/underlined.jpeg" alt="Projeto Underlined" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">Underlined</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> UIKit e SpriteKit</p>
+                    <p class="projeto-descricao">
+                        Jogo de memória investigativo onde o jogador resolve casos formando pares a partir de pistas contextuais. Estimula o raciocínio lógico por meio de desafios interativos e narrativas envolventes.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/cauanlgaldino/Underlined'">GitHub</button>
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/underlined/id6745526553'">App Store</button>
+                    </div>
                 </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">Underlined</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> UIKit, SpriteKit</p>
-                <p class="projeto-descricao">
-                    Jogo de memória com pistas contextuais para resolver casos.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/cauanlgaldino/Underlined'">GitHub</button>
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/underlined/id6745526553'">App Store</button>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/cocoatrack.png" alt="Projeto Cocoa Track" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">Cocoa Track</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI</p>
+                    <p class="projeto-descricao">
+                        App de check-in integrado à API do Sympla, desenvolvido para o evento CocoaHeads Fortaleza. Registra entrada e saída dos participantes, monitora tempo de permanência e gera certificados personalizados. Inclui backend para gerenciamento dos dados.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/seuusuario/cocoatrack'">GitHub</button>
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='#'">App Store</button>
+                    </div>
                 </div>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/DegreenP.png" alt="Projeto Degreen" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">Degreen</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI, Vision, SpriteKit</p>
+                    <p class="projeto-descricao">
+                        Aplicativo educativo que incentiva hábitos sustentáveis por meio de missões diárias, quizzes e um mundo 3D interativo que evolui conforme o progresso do usuário. Desenvolvido com foco em engajamento, diversão e impacto ambiental positivo.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/kellyleticia/MakeItGreatChallenged'">GitHub</button>
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/degreen/idXXXXXXX'">App Store</button>
+                    </div>
+                </div>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/ApegoP.png" alt="Projeto Apego" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">Apego</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI, CoreData, Firebase, MLObjectDetector, Create ML, UIKit, SwiftData</p>
+                    <p class="projeto-descricao">
+                        Projeto colaborativo na Apple Developer Academy | IFCE que utiliza Machine Learning para detectar e classificar peças de roupa, auxiliando na organização pessoal. Desenvolvido com SwiftUI e persistência via SwiftData.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/Dan-Nobre/Apego'">GitHub</button>
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/apego/id6504960604'">App Store</button>
+                    </div>
+                </div>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/jogoDaBruxa 2.png" alt="Projeto Jogo da Bruxa" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">Witch Game — Spacial Computing  VisionOS</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI, RealityKit, VisionOS, Reality Composer Pro</p>
+                    <p class="projeto-descricao">
+                        Aplicativo imersivo para Vision Pro que mistura fantasia e inovação. Jogabilidade baseada em misturar poções mágicas para criar efeitos enquanto interage com fadas, gnomos e trolls. Desenvolvido com Reality Composer Pro para controles por gestos e elementos 3D/2D.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/JogodaBruxa'">GitHub</button>
+                    </div>
+                </div>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/DominoMath_Portifolio.png" alt="Projeto DominoMath" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">DominoMath</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI</p>
+                    <p class="projeto-descricao">
+                        Desenvolvido durante o programa iOS Foundation na Apple Developer Academy | IFCE, DominoMath é um app gameficado para ipad que ensina matemática usando dominós com expressões equivalentes, promovendo aprendizado interativo otimizado para iPad.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/DominoMath'">GitHub</button>
+                    </div>
+                </div>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/maisBen.png" alt="Projeto +bem" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">+bem: Aplicativo de Benefícios</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI</p>
+                    <p class="projeto-descricao">
+                        Aplicativo que simplifica o acesso a informações sobre benefícios e serviços governamentais, centralizando dados para facilitar a busca dos cidadãos por programas sociais e serviços públicos.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/ADA_bemFacil'">GitHub</button>
+                    </div>
+                </div>
+
+                <div class="detalhes-container color-container">
+                    <div class="article-container">
+                        <img src="./img/TigrindoProject.png" alt="Projeto TigerProject" class="projeto-img" />
+                    </div>
+                    <h2 class="hardskills-sub-titulo projeto-titulo">TigerProject</h2>
+                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI</p>
+                    <p class="projeto-descricao" style="margin: 1rem 0;">
+                        Plataforma de compartilhamento de vídeos com cadastro, login, visualização e recompensas ao assistir anúncios. Projeto foca na integração de APIs, autenticação e gerenciamento de dados.
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/TigerProject'">GitHub</button>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/cocoatrack.png" alt="Projeto Cocoa Track" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">Cocoa Track</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI</p>
-                <p class="projeto-descricao">
-                    App de check-in para eventos, com integração Sympla e emissão de certificados.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/seuusuario/cocoatrack'">GitHub</button>
-                </div>
-            </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/DegreenP.png" alt="Projeto Degreen" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">Degreen</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI, Vision, SpriteKit</p>
-                <p class="projeto-descricao">
-                    App educativo que incentiva hábitos sustentáveis com missões e jogos 3D.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/kellyleticia/MakeItGreatChallenged'">GitHub</button>
-                </div>
-            </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/ApegoP.png" alt="Projeto Apego" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">Apego</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI, CoreData, Firebase, ML</p>
-                <p class="projeto-descricao">
-                    App com IA para identificar e organizar roupas usando SwiftData.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/Dan-Nobre/Apego'">GitHub</button>
-                </div>
-            </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/jogoDaBruxa 2.png" alt="Projeto Jogo da Bruxa" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">Witch Game — VisionOS</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, RealityKit, VisionOS</p>
-                <p class="projeto-descricao">
-                    Game imersivo para Vision Pro com poções mágicas e interação 3D/2D.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/JogodaBruxa'">GitHub</button>
-                </div>
-            </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/DominoMath_Portifolio.png" alt="Projeto DominoMath" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">DominoMath</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI</p>
-                <p class="projeto-descricao">
-                    Jogo para iPad que ensina matemática com dominós e desafios interativos.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/DominoMath'">GitHub</button>
-                </div>
-            </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/maisBen.png" alt="Projeto +bem" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">+bem</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI</p>
-                <p class="projeto-descricao">
-                    Centraliza informações sobre benefícios e serviços públicos.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/ADA_bemFacil'">GitHub</button>
-                </div>
-            </div>
-
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./img/TigrindoProject.png" alt="Projeto TigerProject" class="projeto-img" />
-                </div>
-                <h2 class="hardskills-sub-titulo projeto-titulo">TigerProject</h2>
-                <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI</p>
-                <p class="projeto-descricao">
-                    Plataforma de vídeos com login, APIs e recompensas por anúncios.
-                </p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/TigerProject'">GitHub</button>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
-
+    </section>
 
     <section id="Contact">
-        <p class="section_texto_p1">Entre em contato</p>
         <h1 class="titulo">Contato</h1>
         <div class="contato-detalhes-container">
             <div class="contato-info-container">
@@ -279,5 +284,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- antes de fechar o body, ou com defer no head -->
+<script src="script.js" defer></script>
+
+
 </body>
 </html>
