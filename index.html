@@ -8,291 +8,198 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body id="body">
+
     <nav id="desktop-nav">
-        <div class="logo">Taissa Rodrigues</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#About">Sobre</a></li>
-                <li><a href="#Projects">Projetos</a></li>
-                <li><a href="#Contact">Contato</a></li>
-            </ul>
-        </div>
+        <ul class="nav-links">
+            <li><a href="#perfil">Home</a></li>
+            <li><a href="#About">Sobre</a></li>
+            <li><a href="#Projects">Projetos</a></li>
+            <li><a href="#Contact" class="contact-button">Contato</a></li>
+        </ul>
     </nav>
-  <nav id="hamburguer-nav">
-  <div class="logo">Taissa Rodrigues</div>
-  <div class="hamburguer-menu">
-    <button class="hamburguer-icon" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="menu-links">
-      <li><a href="#About">Sobre</a></li>
-      <li><a href="#skills">Habilidades</a></li>
-      <li><a href="#Projects">Projetos</a></li>
-      <li><a href="#Contact">Contato</a></li>
-    </div>
-  </div>
-</nav>
-
-
-    <section id="perfil">
-        <div class="section_foto-container">
-            <img src="./img/foto-perfil.jpg" alt="Foto de perfil de Taissa Rodrigues" />
-        </div>
-        <div class="section_texto">
-            <p class="section_texto_p1">Olá, eu sou</p>
-            <h1 class="titulo">Taissa Rodrigues</h1>
-            <p class="section_texto_p2">Desenvolvedora de Software</p>
-            <div id="redes_sociais-container">
-                <img
-                    src="./img/github.png"
-                    alt="Perfil GitHub"
-                    class="icon github-icon"
-                    onclick="location.href='https://github.com/taissa-rodrigues'"
-                />
-                <img
-                    src="./img/linkedin.png"
-                    alt="Perfil LinkedIn"
-                    class="icon linkedin-icon"
-                    onclick="location.href='https://linkedin.com/in/taissa-rodrigues'"
-                />
-            </div>
-        </div>
-    </section>
-    <section id="About">
-        <p class="section_texto_p1">Conheça mais</p>
-        <h1 class="titulo">Sobre Mim</h1>
-        <div class="sobre-detalhes-container">
-            <div class="sobre-containers">
-                <div class="detalhes-container">
-                    <img src="./img/experiencia.png" alt="Ícone de Experiência" class="icon" />
-                    <h3>Experiência</h3>
-                    <p>
-                        Apple Developer Academy — 2+ anos<br />
-                        Diretora no CocoaHeads Fortaleza, liderando iniciativas da comunidade local de desenvolvedores Apple.
-                    </p>
-                </div>
-                <div class="detalhes-container">
-                    <img src="./img/educação.png" alt="Ícone de Educação" class="icon" />
-                    <h3>Formação</h3>
-                    <p>
-                        Engenharia de Telecomunicações — Instituto Federal do Ceará (IFCE)<br />
-                        Curso de Inglês — Universidade Estadual do Ceará (UECE)
-                    </p>
-                </div>
-            </div>
-           <div class="texto-container">
-    <p>
-        Sou desenvolvedora de software com experiência em projetos mobile e web, 
-        participando de iniciativas que unem tecnologia e inovação. Gosto de aprender 
-        novas ferramentas e trabalhar em equipe para criar soluções eficientes.
-    </p>
     
-   <a
-  href="./img/CV/Taissa_Rodrigues___Currículo.pdf"
-  download="Taissa_Rodrigues_CV.pdf"
-  class="btn"
-  aria-label="Baixar currículo em PDF"
->
-  Baixar Currículo
-</a>
-
-</div>
-
+    <nav id="hamburguer-nav">
+    <div class="logo">Taissa Rodrigues</div>
+      <div class="hamburguer-menu">
+        <button class="hamburguer-icon" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+        </button>
+        <div class="menu-links">
+          <li><a href="#perfil">Home</a></li>
+          <li><a href="#About">Sobre</a></li>
+          <li><a href="#Projects">Projetos</a></li>
+          <li><a href="#Contact">Contato</a></li>
         </div>
-    </section>
+      </div>
+    </nav>
 
-    <section id="skills">
-        <h1 class="titulo">Habilidades</h1>
-        <div class="hardskill-detalhes-container">
-            <div class="sobre-containers">
-                <div class="detalhes-container">
-                    <h2 class="hardskills-sub-titulo">Habilidades Técnicas</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./img/css.png" alt="Ícone CSS" class="icon" />
-                            <div><h3>CSS</h3></div>
-                        </article>
-                        <article>
-                            <img src="./img/html.png" alt="Ícone HTML" class="icon" />
-                            <div><h3>HTML</h3></div>
-                        </article>
-                        <article>
-                            <img src="./img/js.png" alt="Ícone JavaScript" class="icon" />
-                            <div><h3>JavaScript</h3></div>
-                        </article>
-                        <article>
-                            <img src="./img/c.png" alt="Ícone Linguagem C" class="icon" />
-                            <div><h3>C</h3></div>
-                        </article>
-                        <article>
-                            <img src="./img/swift.png" alt="Ícone Swift" class="icon" />
-                            <div><h3>Swift</h3></div>
-                        </article>
-                        <article>
-                            <img src="./img/figma.png" alt="Ícone Figma" class="icon" />
-                            <div><h3>Figma</h3></div>
-                        </article>
+<section id="perfil">
+    <div class="perfil-content">
+        <div class="profile-pic-container">
+            <img src="./img/foto-perfil.jpg" alt="Foto de perfil de Taissa Rodrigues" class="profile-pic">
+        </div>
+
+        <div class="perfil-text">
+            <h1 class="titulo">Olá, eu sou Taissa</h1>
+            <!-- <p class="subtitulo">
+                <img src="./img/swift.png" alt="Swift Icon" class="inline-icon"> Junior Leaner Apple Developer Academy
+            </p> -->
+             <p class="subtitulo">Junior Leaner Apple Developer Academy</p>
+
+            <p class="subtitulo">Software Developer</p>
+        </div>
+    </div>
+</section>
+<section id="About">
+    <div class="about-container">
+        <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+            <p>
+               Sou desenvolvedora de software em Fortaleza e estudante de Engenharia de Telecomunicações no IFCE. Tenho paixão por criar aplicativos, explorar novas tecnologias e transformar ideias em experiências reais. Atuo também como diretora do CocoaHeads Fortaleza, comunidade onde organizo eventos e conecto pessoas desenvolvedoras ao ecossistema IOS.
+            </p>
+            
+            <div class="about-contact-container">
+                <div class="contact-info-item">
+                    <img src="./img/email.png" alt="Ícone de Email" class="contact-icon">
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:taissavrpdev@gmail.com">taissavrpdev@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <img src="./img/linkedin.png" alt="Ícone do LinkedIn" class="contact-icon">
+                    <div>
+                        <strong>LinkedIn</strong><br>
+                        <a href="https://linkedin.com/in/taissa-rodrigues" target="_blank">in/taissa-rodrigues-dev</a>
                     </div>
                 </div>
             </div>
+
+            <a href="./img/CV/Taissa_Rodrigues___Currículo.pdf" download="Taissa_Rodrigues_CV.pdf" class="btn about-btn">
+                Baixar Currículo
+            </a>
         </div>
-    </section>
+        <div class="about-image">
+            <img src="./img/figma.png" alt="Imagem decorativa" />
+        </div>
+    </div>
+</section>
 
     <section id="Projects">
-        <p class="section_texto_p1">Explore meus trabalhos recentes</p>
-        <h1 class="titulo">Projetos</h1>
-        <div class="hardskill-detalhes-container">
-            <div class="sobre-containers">
-
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/underlined.jpeg" alt="Projeto Underlined" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">Underlined</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> UIKit e SpriteKit</p>
-                    <p class="projeto-descricao">
-                        Jogo de memória investigativo onde o jogador resolve casos formando pares a partir de pistas contextuais. Estimula o raciocínio lógico por meio de desafios interativos e narrativas envolventes.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/cauanlgaldino/Underlined'">GitHub</button>
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/underlined/id6745526553'">App Store</button>
-                    </div>
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="projects-container">
+            
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Underlined</h3>
+                    <p>Jogo de memória investigativo onde o jogador resolve casos formando pares a partir de pistas contextuais.</p>
+                    <a href="https://apps.apple.com/br/app/underlined/id6745526553" class="btn">Ver mais</a>
                 </div>
-
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/cocoatrack.png" alt="Projeto Cocoa Track" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">Cocoa Track</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI</p>
-                    <p class="projeto-descricao">
-                        App de check-in integrado à API do Sympla, desenvolvido para o evento CocoaHeads Fortaleza. Registra entrada e saída dos participantes, monitora tempo de permanência e gera certificados personalizados. Inclui backend para gerenciamento dos dados.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/seuusuario/cocoatrack'">GitHub</button>
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='#'">App Store</button>
-                    </div>
+                <div class="project-image">
+                    <img src="./img/underlined.jpeg" alt="Projeto Underlined" />
                 </div>
+            </div>
 
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/DegreenP.png" alt="Projeto Degreen" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">Degreen</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI, Vision, SpriteKit</p>
-                    <p class="projeto-descricao">
-                        Aplicativo educativo que incentiva hábitos sustentáveis por meio de missões diárias, quizzes e um mundo 3D interativo que evolui conforme o progresso do usuário. Desenvolvido com foco em engajamento, diversão e impacto ambiental positivo.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/kellyleticia/MakeItGreatChallenged'">GitHub</button>
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/degreen/idXXXXXXX'">App Store</button>
-                    </div>
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Cocoa Track</h3>
+                    <p>App de check-in integrado à API do Sympla, desenvolvido para o evento CocoaHeads Fortaleza.</p>
+                    <a href="https://github.com/taissa-rodrigues" class="btn">Ver mais</a>
                 </div>
-
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/ApegoP.png" alt="Projeto Apego" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">Apego</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI, CoreData, Firebase, MLObjectDetector, Create ML, UIKit, SwiftData</p>
-                    <p class="projeto-descricao">
-                        Projeto colaborativo na Apple Developer Academy | IFCE que utiliza Machine Learning para detectar e classificar peças de roupa, auxiliando na organização pessoal. Desenvolvido com SwiftUI e persistência via SwiftData.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/Dan-Nobre/Apego'">GitHub</button>
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://apps.apple.com/br/app/apego/id6504960604'">App Store</button>
-                    </div>
+                <div class="project-image">
+                    <img src="./img/cocoatrack.png" alt="Projeto Cocoa Track" />
                 </div>
+            </div>
 
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/jogoDaBruxa 2.png" alt="Projeto Jogo da Bruxa" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">Witch Game — Spacial Computing  VisionOS</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI, RealityKit, VisionOS, Reality Composer Pro</p>
-                    <p class="projeto-descricao">
-                        Aplicativo imersivo para Vision Pro que mistura fantasia e inovação. Jogabilidade baseada em misturar poções mágicas para criar efeitos enquanto interage com fadas, gnomos e trolls. Desenvolvido com Reality Composer Pro para controles por gestos e elementos 3D/2D.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/JogodaBruxa'">GitHub</button>
-                    </div>
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Degreen</h3>
+                    <p>Aplicativo educativo que incentiva hábitos sustentáveis por meio de missões e quizzes interativos.</p>
+                    <a href="https://github.com/kellyleticia/MakeItGreatChallenged" class="btn">Ver mais</a>
                 </div>
-
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/DominoMath_Portifolio.png" alt="Projeto DominoMath" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">DominoMath</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> Swift, SwiftUI</p>
-                    <p class="projeto-descricao">
-                        Desenvolvido durante o programa iOS Foundation na Apple Developer Academy | IFCE, DominoMath é um app gameficado para ipad que ensina matemática usando dominós com expressões equivalentes, promovendo aprendizado interativo otimizado para iPad.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/DominoMath'">GitHub</button>
-                    </div>
+                <div class="project-image">
+                    <img src="./img/DegreenP.png" alt="Projeto Degreen" />
                 </div>
+            </div>
 
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/maisBen.png" alt="Projeto +bem" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">+bem: Aplicativo de Benefícios</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI</p>
-                    <p class="projeto-descricao">
-                        Aplicativo que simplifica o acesso a informações sobre benefícios e serviços governamentais, centralizando dados para facilitar a busca dos cidadãos por programas sociais e serviços públicos.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/ADA_bemFacil'">GitHub</button>
-                    </div>
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Apego</h3>
+                    <p>Projeto que utiliza Machine Learning para detectar e classificar peças de roupa, auxiliando na organização pessoal.</p>
+                    <a href="https://github.com/Dan-Nobre/Apego" class="btn">Ver mais</a>
                 </div>
-
-                <div class="detalhes-container color-container">
-                    <div class="article-container">
-                        <img src="./img/TigrindoProject.png" alt="Projeto TigerProject" class="projeto-img" />
-                    </div>
-                    <h2 class="hardskills-sub-titulo projeto-titulo">TigerProject</h2>
-                    <p class="projeto-tecnologias"><strong>Tecnologias:</strong> SwiftUI</p>
-                    <p class="projeto-descricao" style="margin: 1rem 0;">
-                        Plataforma de compartilhamento de vídeos com cadastro, login, visualização e recompensas ao assistir anúncios. Projeto foca na integração de APIs, autenticação e gerenciamento de dados.
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 projeto-bnt" onclick="location.href='https://github.com/taissarodrigues/TigerProject'">GitHub</button>
-                    </div>
+                <div class="project-image">
+                    <img src="./img/ApegoP.png" alt="Projeto Apego" />
                 </div>
+            </div>
+        </div>
+        
+        <div class="browse-all-container">
+            <button id="show-more-btn" class="btn btn-secondary">Ver Todos os Projetos</button>
+        </div>
 
+        <div id="more-projects" class="projects-container hidden">
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>Witch Game — VisionOS</h3>
+                    <p>Aplicativo imersivo para Vision Pro que mistura fantasia e inovação com poções mágicas e gestos.</p>
+                    <a href="https://github.com/taissarodrigues/JogodaBruxa" class="btn">Ver mais</a>
+                </div>
+                <div class="project-image">
+                    <img src="./img/jogoDaBruxa 2.png" alt="Projeto Jogo da Bruxa" />
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>DominoMath</h3>
+                    <p>App gamificado para iPad que ensina matemática usando dominós com expressões equivalentes.</p>
+                    <a href="https://github.com/taissarodrigues/DominoMath" class="btn">Ver mais</a>
+                </div>
+                <div class="project-image">
+                    <img src="./img/DominoMath_Portifolio.png" alt="Projeto DominoMath" />
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>+bem: App de Benefícios</h3>
+                    <p>Simplifica o acesso a informações sobre benefícios e serviços governamentais para cidadãos.</p>
+                    <a href="https://github.com/taissarodrigues/ADA_bemFacil" class="btn">Ver mais</a>
+                </div>
+                <div class="project-image">
+                    <img src="./img/maisBen.png" alt="Projeto +bem" />
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-text">
+                    <h3>TigerProject</h3>
+                    <p>Plataforma de compartilhamento de vídeos com cadastro, login, visualização e recompensas.</p>
+                    <a href="https://github.com/taissarodrigues/TigerProject" class="btn">Ver mais</a>
+                </div>
+                <div class="project-image">
+                    <img src="./img/TigrindoProject.png" alt="Projeto TigerProject" />
+                </div>
             </div>
         </div>
     </section>
 
     <section id="Contact">
-        <h1 class="titulo">Contato</h1>
-        <div class="contato-detalhes-container">
-            <div class="contato-info-container">
-                <div class="contact-info">
-                    <img src="./img/email.png" class="icon contact-icon email-icon" alt="Ícone de Email" />
-                    <p><a href="mailto:taissavrpdev@gmail.com">taissavrpdev@gmail.com</a></p>
-                </div>
+        <div class="contact-container">
+            <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+            <p>Construindo algo impactante juntos. Seja sua marca, seu site ou sua próxima grande ideia.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-secondary" onclick="location.href='https://linkedin.com/in/taissa-rodrigues'">LinkedIn</button>
+                <button class="btn btn-secondary" onclick="location.href='mailto:taissavrpdev@gmail.com'">Email</button>
             </div>
         </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#About">Sobre</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#Projects">Projetos</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Taissa Rodrigues. Todos os direitos reservados.</p>
+        <p>Copyright &#169; 2025 Taissa Rodrigues.</p>
     </footer>
 
     <script src="script.js"></script>
-    <!-- antes de fechar o body, ou com defer no head -->
-<script src="script.js" defer></script>
-
-
 </body>
 </html>
