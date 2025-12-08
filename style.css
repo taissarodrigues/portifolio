@@ -34,7 +34,7 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 3.5rem 0;
   max-width: var(--container-width);
   margin: 0 auto;
 }
@@ -80,23 +80,35 @@ a {
   background-color: var(--fg);
   color: var(--bg);
 }
+
 #desktop-nav a.contact-button:hover {
   background-color: #333;
 }
 
 #hamburguer-nav {
-    display: none; /* Escondido em desktop */
+  display: none;
+  /* Escondido em desktop */
+}
+
+#perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  /* <-- AJUSTEI PARA FICAR PERFEITO */
+  position: relative;
+  flex-direction: column;
 }
 
 
 /* Seção Perfil (Hero) */
-#perfil {
+/* #perfil {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #perfil .titulo {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -115,8 +127,8 @@ a {
 }
 
 .inline-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 /* Títulos de Seção */
@@ -145,14 +157,15 @@ a {
   margin-top: 2rem;
   font-size: 1.1rem;
 }
+
 #About .contact-links a {
-    font-weight: 500;
-    text-decoration: underline;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 #About .about-image img {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   margin: 0 auto;
   display: block;
 }
@@ -195,7 +208,7 @@ a {
 }
 
 .browse-all-container {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 /* Botões */
@@ -208,19 +221,21 @@ a {
   color: var(--bg);
   transition: transform 0.2s ease;
 }
+
 .btn:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: var(--fg);
-    border: 1px solid var(--border);
+  background-color: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
 }
+
 .btn-secondary:hover {
-    background-color: #f0f0f0;
-    border-color: #ccc;
-    transform: scale(1.05);
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  transform: scale(1.05);
 }
 
 /* Seção Contato (CTA) */
@@ -232,16 +247,16 @@ a {
 }
 
 #Contact p {
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-    color: var(--muted);
-    line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  color: var(--muted);
+  line-height: 1.7;
 }
 
 .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 
@@ -261,70 +276,77 @@ footer {
 /* --- ANIMAÇÃO PARA TODOS OS PROJETOS --- */
 /* ======================================= */
 .project-card {
-    /* Estado inicial: invisível e movido para baixo */
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  /* Estado inicial: invisível e movido para baixo */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .project-card.visible {
-    /* Estado final: visível e na posição original */
-    opacity: 1;
-    transform: translateY(0);
+  /* Estado final: visível e na posição original */
+  opacity: 1;
+  transform: translateY(0);
 }
+
 /* ======================================= */
 /* --- NOVOS ESTILOS PARA A SEÇÃO ABOUT --- */
 /* ======================================= */
 
 .about-contact-container {
-    margin-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Espaço entre a linha do Email e do LinkedIn */
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* Espaço entre a linha do Email e do LinkedIn */
 }
 
 .contact-info-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Espaço entre o ícone e o texto */
-    text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Espaço entre o ícone e o texto */
+  text-align: left;
 }
 
 .contact-icon {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0; /* Impede que o ícone seja esmagado */
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  /* Impede que o ícone seja esmagado */
 }
 
 .contact-info-item strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .contact-info-item a {
-    color: var(--muted);
-    text-decoration: none;
+  color: var(--muted);
+  text-decoration: none;
 }
 
 .contact-info-item a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .about-btn {
-    margin-top: 2.5rem;
-    display: inline-block; /* Necessário para a margem funcionar */
-    align-self: flex-start; /* Alinha o botão à esquerda */
+  margin-top: 2.5rem;
+  display: inline-block;
+  /* Necessário para a margem funcionar */
+  align-self: flex-start;
+  /* Alinha o botão à esquerda */
 }
+
 /* ======================================= */
 /* --- NOVOS ESTILOS PARA A SEÇÃO PERFIL --- */
 /* ======================================= */
 
-#perfil {
+/* #perfil {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 90vh;
   position: relative;
-}
+} */
 
 .perfil-content {
   position: relative;
@@ -341,8 +363,8 @@ footer {
 .profile-pic-container {
   width: 300px;
   height: 300px;
-  
-  border-radius: 40px; 
+
+  border-radius: 40px;
   box-shadow: 0 15px 40px rgba(43, 12, 12, 0.15);
   display: flex;
   align-items: center;
@@ -353,6 +375,35 @@ footer {
 .profile-pic {
   width: 100%;
   height: 100%;
-  border-radius: 40px; /* Borda interna da foto */
+  border-radius: 40px;
+  /* Borda interna da foto */
   object-fit: cover;
+}
+
+.tech-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  padding: 0.4rem 0.9rem;
+  background-color: #fafafa;
+  border: 1px solid #e7e7e7;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.role {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.project-card .btn {
+  margin-top: 1.2rem;
 }
