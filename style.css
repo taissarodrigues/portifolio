@@ -1,7 +1,9 @@
 /* Importa a fonte 'Inter' do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* ============================= */
 /* Variáveis Globais de Tema */
+/* ============================= */
 :root {
   --bg: #fdfdfd;
   --fg: #111111;
@@ -14,7 +16,9 @@
   --container-width: 1120px;
 }
 
-/* Reset e Estilos Base */
+/* ============================= */
+/* Reset e Base */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +48,9 @@ a {
   color: inherit;
 }
 
+/* ============================= */
 /* Navegação Desktop */
+/* ============================= */
 #desktop-nav {
   display: flex;
   justify-content: center;
@@ -85,30 +91,24 @@ a {
   background-color: #333;
 }
 
+/* ============================= */
+/* Navegação Mobile */
+/* ============================= */
 #hamburguer-nav {
   display: none;
-  /* Escondido em desktop */
 }
 
+/* ============================= */
+/* Hero / Perfil */
+/* ============================= */
 #perfil {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 10vh;
-  /* <-- AJUSTEI PARA FICAR PERFEITO */
   position: relative;
   flex-direction: column;
 }
-
-
-/* Seção Perfil (Hero) */
-/* #perfil {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 #perfil .titulo {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -126,19 +126,48 @@ a {
   margin-top: 0.5rem;
 }
 
-.inline-icon {
-  width: 24px;
-  height: 24px;
+.perfil-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-/* Títulos de Seção */
+.perfil-text {
+  text-align: center;
+}
+
+.profile-pic-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 0 15px 40px rgba(43, 12, 12, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+/* ============================= */
+/* Títulos */
+/* ============================= */
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 2.5rem;
 }
 
-/* Seção Sobre */
+/* ============================= */
+/* Sobre */
+/* ============================= */
 #About .about-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -153,16 +182,6 @@ a {
   font-size: 1.1rem;
 }
 
-#About .contact-links {
-  margin-top: 2rem;
-  font-size: 1.1rem;
-}
-
-#About .contact-links a {
-  font-weight: 500;
-  text-decoration: underline;
-}
-
 #About .about-image img {
   width: 100%;
   max-width: 250px;
@@ -170,141 +189,18 @@ a {
   display: block;
 }
 
-/* Seção Projetos */
-#Projects .projects-container {
-  display: grid;
-  gap: 2rem;
-}
-
-.project-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 3rem;
-  padding: 2.5rem;
-  background-color: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow);
-  text-align: left;
-}
-
-.project-card .project-text h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.project-card .project-text p {
-  font-size: 1.1rem;
-  color: var(--muted);
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.project-card .project-image img {
-  width: 100%;
-  border-radius: var(--radius-sm);
-}
-
-.browse-all-container {
-  margin-top: 3rem;
-}
-
-/* Botões */
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.8rem;
-  border-radius: 999px;
-  font-weight: 500;
-  background-color: var(--fg);
-  color: var(--bg);
-  transition: transform 0.2s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: var(--fg);
-  border: 1px solid var(--border);
-}
-
-.btn-secondary:hover {
-  background-color: #f0f0f0;
-  border-color: #ccc;
-  transform: scale(1.05);
-}
-
-/* Seção Contato (CTA) */
-#Contact .contact-container {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 4rem 2rem;
-}
-
-#Contact p {
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-
-/* Footer */
-footer {
-  padding: 4rem 0 2rem 0;
-  color: var(--muted);
-}
-
-/* Esconde os projetos adicionais */
-#Projects .projects-container.hidden {
-  display: none;
-}
-
-
-/* ======================================= */
-/* --- ANIMAÇÃO PARA TODOS OS PROJETOS --- */
-/* ======================================= */
-.project-card {
-  /* Estado inicial: invisível e movido para baixo */
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.project-card.visible {
-  /* Estado final: visível e na posição original */
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ======================================= */
-/* --- NOVOS ESTILOS PARA A SEÇÃO ABOUT --- */
-/* ======================================= */
-
+/* Contatos dentro do Sobre */
 .about-contact-container {
   margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  /* Espaço entre a linha do Email e do LinkedIn */
 }
 
 .contact-info-item {
   display: flex;
   align-items: center;
   gap: 1rem;
-  /* Espaço entre o ícone e o texto */
   text-align: left;
 }
 
@@ -312,7 +208,6 @@ footer {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  /* Impede que o ícone seja esmagado */
 }
 
 .contact-info-item strong {
@@ -331,53 +226,55 @@ footer {
 .about-btn {
   margin-top: 2.5rem;
   display: inline-block;
-  /* Necessário para a margem funcionar */
   align-self: flex-start;
-  /* Alinha o botão à esquerda */
 }
 
-/* ======================================= */
-/* --- NOVOS ESTILOS PARA A SEÇÃO PERFIL --- */
-/* ======================================= */
-
-/* #perfil {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 90vh;
-  position: relative;
-} */
-
-.perfil-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* ============================= */
+/* Projetos */
+/* ============================= */
+#Projects .projects-container {
+  display: grid;
   gap: 2rem;
 }
 
-.perfil-text {
-  text-align: center;
-}
-
-.profile-pic-container {
-  width: 300px;
-  height: 300px;
-
-  border-radius: 40px;
-  box-shadow: 0 15px 40px rgba(43, 12, 12, 0.15);
-  display: flex;
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
-  padding: 10px;
+  gap: 3rem;
+  padding: 2.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  text-align: left;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.profile-pic {
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card .project-text h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-card .project-text p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.project-card .project-image img {
   width: 100%;
-  height: 100%;
-  border-radius: 40px;
-  /* Borda interna da foto */
-  object-fit: cover;
+  border-radius: var(--radius-sm);
 }
 
 .tech-tags {
@@ -406,4 +303,71 @@ footer {
 
 .project-card .btn {
   margin-top: 1.2rem;
+}
+
+.browse-all-container {
+  margin-top: 3rem;
+}
+
+#Projects .projects-container.hidden {
+  display: none;
+}
+
+/* ============================= */
+/* Botões */
+/* ============================= */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 500;
+  background-color: var(--fg);
+  color: var(--bg);
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--fg);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* ============================= */
+/* Contato */
+/* ============================= */
+#Contact .contact-container {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 4rem 2rem;
+}
+
+#Contact p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+footer {
+  padding: 4rem 0 2rem 0;
+  color: var(--muted);
 }
