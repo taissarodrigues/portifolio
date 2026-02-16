@@ -179,7 +179,8 @@ a {
 #About .about-text p {
   line-height: 1.8;
   color: var(--muted);
-  font-size: 1.1rem;
+  font-size: 1.3rem; /* Fonte maior */
+  margin-bottom: 20px; /* Espaço entre o primeiro e o segundo parágrafo */
 }
 
 #About .about-image img {
@@ -200,7 +201,7 @@ a {
 .contact-info-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.1rem;
   text-align: left;
 }
 
