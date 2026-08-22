@@ -562,11 +562,20 @@ button:focus-visible {
   letter-spacing: 0.02em;
 }
 .work-log i {
+  display: grid;
+  place-items: center;
   color: var(--accent);
-  font-size: 20px;
   font-style: normal;
-  text-align: right;
   transition: transform 0.3s var(--ease);
+}
+.work-log i svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .work-log a:hover i {
   transform: translate(3px, -3px);
