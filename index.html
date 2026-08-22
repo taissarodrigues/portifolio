@@ -4,12 +4,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Taissa Rodrigues | iOS & Front-End Developer</title>
+
+  <title>
+    Taissa Rodrigues | Desenvolvedora iOS & Front-End | Estágio em Software
+  </title>
+
+  <!-- SEO / Compartilhamento -->
+  <meta
+    name="description"
+    content="Portfólio de Taissa Rodrigues, estudante de Engenharia de Computação e desenvolvedora iOS e Front-End. Experiência com Swift, SwiftUI, React e TypeScript. Aberta a oportunidades de estágio em desenvolvimento de software."
+  />
+
+  <meta
+    property="og:title"
+    content="Taissa Rodrigues | iOS & Front-End Developer"
+  />
+
+  <meta
+    property="og:description"
+    content="Projetos em iOS e Web com Swift, SwiftUI, React e TypeScript. Aberta a oportunidades de estágio em desenvolvimento de software."
+  />
+
+  <meta property="og:image" content="./img/foto-perfil.jpg" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="./img/foto-perfil.jpg" />
+
   <!-- Favicon -->
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" href="./img/favicon-light.png" media="(prefers-color-scheme: light)">
-  <link rel="icon" type="image/png" href="./img/favicon-dark.png" media="(prefers-color-scheme: dark)">
-  <link rel="apple-touch-icon" href="./img/favicon-light.png">
+  <link
+    rel="icon"
+    href="./img/favicon.ico"
+    type="image/x-icon"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./img/favicon-light.png"
+    media="(prefers-color-scheme: light)"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./img/favicon-dark.png"
+    media="(prefers-color-scheme: dark)"
+  >
+
+  <link
+    rel="apple-touch-icon"
+    href="./img/favicon-light.png"
+  >
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
@@ -19,266 +65,1017 @@
 
   <!-- ================= NAV DESKTOP ================= -->
   <nav id="desktop-nav">
+
+    <a
+      href="#perfil"
+      class="nav-brand"
+      aria-label="Ir para o início"
+    >
+      <span class="brand-mark">TR</span>
+      <span>Taissa Rodrigues</span>
+    </a>
+
     <ul class="nav-links">
-      <li><a href="#About">Sobre</a></li>
-      <li><a href="#Projects">Projetos</a></li>
-      <li><a href="./img/CV/Taissa Rodrigues - CV26.docx.pdf" target="_blank">Currículo</a></li>
-      <li><a href="#Contact" class="contact-button">Contato</a></li>
+
+      <li>
+        <a href="#About">
+          Sobre
+        </a>
+      </li>
+
+      <li>
+        <a href="#Capabilities">
+          Atuação
+        </a>
+      </li>
+
+      <li>
+        <a href="#Projects">
+          Projetos
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="./img/CV/Taissa_Rodrigues_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Currículo
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="#Contact"
+          class="contact-button"
+        >
+          Contato
+        </a>
+      </li>
+
+      <li>
+        <button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">☼</span>
+        </button>
+      </li>
+
     </ul>
   </nav>
 
   <!-- ================= NAV MOBILE ================= -->
   <nav id="hamburguer-nav">
-    <div class="logo">Taissa Rodrigues</div>
+
+    <div class="logo">
+      Taissa Rodrigues
+    </div>
+
+    <button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">☼</span>
+    </button>
+
     <div class="hamburguer-menu">
-      <button class="hamburguer-icon" aria-label="Abrir menu" aria-expanded="false">
+
+      <button
+        class="hamburguer-icon"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="menu-links">
-        <li><a href="#About">Sobre</a></li>
-        <li><a href="#Projects">Projetos</a></li>
-        <li><a href="./img/CV/Taissa_Rodrigues___Currículo.pdf" target="_blank">Currículo</a></li>
-        <li><a href="#Contact">Contato</a></li>
-      </div>
+
+      <ul class="menu-links">
+
+        <li>
+          <a href="#About">
+            Sobre
+          </a>
+        </li>
+
+        <li>
+          <a href="#Capabilities">
+            Atuação
+          </a>
+        </li>
+
+        <li>
+          <a href="#Projects">
+            Projetos
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="./img/CV/Taissa_Rodrigues_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Currículo
+          </a>
+        </li>
+
+        <li>
+          <a href="#Contact">
+            Contato
+          </a>
+        </li>
+
+      </ul>
     </div>
   </nav>
 
   <!-- ================= HERO ================= -->
   <section id="perfil">
+
     <div class="perfil-content">
-      <div class="profile-pic-container">
-        <img src="./img/Design sem nome-5 4.jpg"
-          alt="Foto de Taissa Rodrigues"
-          class="profile-pic">
-      </div>
+
+      <aside class="hero-socials" aria-label="Redes sociais">
+        <a href="https://www.linkedin.com/in/taissa-rodrigues-dev/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          in
+        </a>
+        <a href="https://github.com/taissarodrigues" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          gh
+        </a>
+      </aside>
 
       <div class="perfil-text">
-        <h1 class="titulo">Olá, eu sou Taissa</h1>
-        <p class="subtitulo">
-          Jr. Learner Apple Developer Academy | Software Developer
+
+        <span class="speech-tag">It's me</span>
+
+        <h1 class="titulo">
+          Taissa
+          <span>Rodrigues</span>
+        </h1>
+
+        <p class="hero-role">
+          Desenvolvedora de Software
         </p>
+
+        <p class="subtitulo">
+          Sou Taissa, estudante de Engenharia de Computação. Desenvolvo para
+          iOS e web com Swift, SwiftUI, React e TypeScript,com aplicativos
+          publicados na App Store.
+        </p>
+
+        <p class="location-line">
+          Fortaleza, CE • Brasil
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#Contact"
+            class="hero-cta"
+          >
+            Let's talk
+          </a>
+
+          <a
+            href="./img/CV/Taissa_Rodrigues_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hero-text-link"
+          >
+            <span aria-hidden="true">→</span> Ver currículo
+          </a>
+
+        </div>
       </div>
+
+      <figure class="hero-portrait">
+        <img
+          src="./img/foto-perfil.jpg"
+          alt="Retrato de Taissa Rodrigues"
+        >
+      </figure>
+
     </div>
   </section>
 
   <!-- ================= SOBRE ================= -->
   <section id="About">
+
     <div class="about-container">
+
       <div class="about-text">
-        <h2 class="section-title">Sobre mim</h2>
 
-  <p>
-  Sou desenvolvedora de software e graduanda em Engenharia de Telecomunicações. 
-  Tenho paixão por criar aplicativos e explorar novas tecnologias. 
-  Construí minha base técnica no ecossistema Apple (iOS/Swift) na Apple Developer Academy, 
-  onde também tive a honra de atuar como embaixadora da turma 24-25. 
-  Atualmente, expando meu leque técnico trabalhando com desenvolvimento Front-End Web no Grupo de Comunicação O POVO.
-</p>
-<p>
-  Acredito muito no poder da colaboração. Por isso, atuo como Diretora do CocoaHeads Fortaleza, 
-  organizando eventos e fomentando o networking para conectar pessoas e fortalecer o ecossistema de tecnologia local.
-</p>
+        <span class="eyebrow">
+          Quem sou eu
+        </span>
 
-        <div class="about-contact-container">
-          <div class="contact-info-item">
-            <img src="./img/email.png" class="contact-icon">
-            <div>
-              <strong>Email</strong><br>
-              <a href="mailto:taissavrpdev@gmail.com">
-                taissavrpdev@gmail.com
-              </a>
-            </div>
-          </div>
+        <h2 class="section-title">
+          Sobre mim
+        </h2>
 
-          <div class="contact-info-item">
-            <img src="./img/linkedin.png" class="contact-icon">
-            <div>
-              <strong>LinkedIn</strong><br>
-              <a href="https://www.linkedin.com/in/taissa-rodrigues-dev/" target="_blank">
-                in/taissa-rodrigues-dev
-              </a>
-            </div>
-          </div>
-        </div>
-        
+        <p>
+          Sou desenvolvedora de software e graduanda em Engenharia de Computação.
+          Tenho paixão por criar aplicativos e explorar novas tecnologias.
+          Construí minha base técnica no ecossistema Apple (iOS/Swift) na Apple Developer Academy,
+          onde também tive a honra de atuar como embaixadora da turma 24-25.
+          Atualmente, expando meu leque técnico trabalhando com desenvolvimento Front-End Web no Grupo de Comunicação O POVO.
+        </p>
 
-        <a href="./img/CV/Taissa Rodrigues - CV26.docx.pdf"
+        <p>
+          Acredito muito no poder da colaboração. Por isso, atuo como Diretora do CocoaHeads Fortaleza, gosto da parte de organizar espaço pra outras pessoas trocarem ideia técnica,
+          acho que <strong class="about-pullquote">boa parte do que aprendi de tecnologia de verdade veio de conversa, não só de documentação.</strong>
+        </p>
+
+        <a
+          href="./img/CV/Taissa_Rodrigues_CV.pdf"
           target="_blank"
-          class="btn about-btn">
-          Baixar Currículo
+          rel="noopener noreferrer"
+          class="btn about-btn"
+        >
+          Ver currículo
         </a>
+
       </div>
 
-      <div class="about-image">
-        <img src="./img/xcode.logo.png"
-          alt="Foto de Taissa">
+      <div class="xcode-sticker" aria-hidden="true">
+        <img
+          src="./img/xcode.logo.png"
+          alt=""
+          loading="lazy"
+        >
       </div>
     </div>
   </section>
 
+  <!-- ================= ATUAÇÃO ================= -->
+  <section id="Capabilities">
+
+    <div class="section-heading split-heading">
+      <div>
+        <span class="eyebrow">Como trabalho</span>
+        <h2 class="section-title">Do código ao produto.</h2>
+      </div>
+
+      <p>
+        Cada decisão técnica carrega uma decisão de produto junto.
+
+      </p>
+    </div>
+
+    <div class="capability-grid">
+
+      <article class="capability-card">
+        <span class="capability-index">01 / MOBILE</span>
+        <h3>Aplicativos iOS</h3>
+        <p>
+          Do primeiro protótipo até a App Store: interface, persistência de
+          dados e as decisões chatas que ninguém vê, mas que fazem o app não travar.
+        </p>
+      </article>
+
+      <article class="capability-card">
+        <span class="capability-index">02 / WEB</span>
+        <h3>Interfaces web</h3>
+        <p>
+          React e TypeScript para transformar dado bruto em informação que alguém
+          consegue entender em três segundos, olhando de relance.
+        </p>
+      </article>
+
+      <article class="capability-card">
+        <span class="capability-index">03 / PRODUTO</span>
+        <h3>Produto e experiência</h3>
+        <p>
+          Acessibilidade e UI não são “acabamento”. São parte do problema que estou
+          resolvendo, não um passo depois de resolvê-lo.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="technology-rail" aria-label="Principais tecnologias">
+      <span>Swift</span>
+      <span>SwiftUI</span>
+      <span>UIKit</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>CoreML</span>
+      <span>Git</span>
+      <span>Figma</span>
+    </div>
+
+  </section>
+
+  <!-- ================= FORMA DE CONSTRUIR ================= -->
+  <section id="Approach">
+
+    <div class="approach-panel">
+      <span class="eyebrow">Minha forma de construir</span>
+
+      <h2>
+        Tecnologia faz sentido quando
+        <span>chega bem às pessoas.</span>
+      </h2>
+
+      <figure class="approach-photo">
+        <img
+          src="./img/encontro-tecnologia-original.JPG"
+          alt="Taissa em um encontro com profissionais de tecnologia"
+          loading="lazy"
+        >
+      </figure>
+
+      <div class="approach-copy">
+        <p>
+          Gosto de entender o problema antes de escolher a solução. Isso me ajuda
+          a construir interfaces mais claras, fluxos mais simples e código com propósito.
+        </p>
+
+        <p>
+          Trabalho bem em colaboração, valorizo feedback e levo cada projeto como
+          uma oportunidade de aprender enquanto entrego algo útil e bem cuidado.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
   <!-- ================= PROJETOS ================= -->
   <section id="Projects">
-    <h2 class="section-title">Projetos em Destaque</h2>
+
+    <span class="eyebrow">
+      Projeto
+    </span>
+
+    <h2 class="section-title">
+      Projetos em destaque
+    </h2>
 
     <div class="projects-container">
 
+      <!-- ================= MONITOR DE DEPUTADOS ================= -->
       <div class="project-card">
+
         <div class="project-text">
-          <h3>Skedou</h3>
-          <p>
-            Aplicativo de gestão para profissionais pet care com controle
-            de agenda, clientes e automações inteligentes.
-          </p>
-          <div class="role">Desenvolvimento iOS • Arquitetura • UI/UX</div>
+
+          <h3>
+            Monitor de Deputados
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> acompanhar a atuação dos deputados federais do
+              Ceará exige consultar dados públicos que nem sempre chegam organizados para leitura rápida.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> organizei a listagem e os detalhes em uma
+              interface responsiva, consultando informações sob demanda e mantendo em
+              cache os dados já carregados.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> uma aplicação editorial que reúne deputados,
+              frentes parlamentares e informações detalhadas a partir da API de Dados
+              Abertos da Câmara.
+            </p>
+          </div>
+
+          <div class="role">
+            Front-End Web • Dados públicos • Produto editorial
+          </div>
+
+          <div class="project-impact">
+            <span>Deputados federais do Ceará</span>
+            <span>Consulta sob demanda e cache</span>
+            <span>Layout responsivo</span>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">API da Câmara</span>
+            <span class="tech-tag">BEM</span>
+          </div>
+
+          <div class="project-buttons">
+
+            <a
+              href="https://github.com/taissarodrigues/Monitor-de-Deputados"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+          </div>
+        </div>
+
+        <div class="project-image">
+
+          <div class="monitor-mobile-gallery" aria-label="Telas mobile do Monitor de Deputados">
+            <img
+              src="https://raw.githubusercontent.com/taissarodrigues/Monitor-de-Deputados/main/assets/img/readme/monitor-mobile-hero.png"
+              alt="Tela inicial mobile do Monitor de Deputados"
+              loading="lazy"
+            >
+            <img
+              src="https://raw.githubusercontent.com/taissarodrigues/Monitor-de-Deputados/main/assets/img/readme/monitor-mobile-deputados.png"
+              alt="Lista mobile de deputados do Ceará"
+              loading="lazy"
+            >
+            <img
+              src="https://raw.githubusercontent.com/taissarodrigues/Monitor-de-Deputados/main/assets/img/readme/monitor-mobile-popup.png"
+              alt="Detalhes de um deputado na interface mobile"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= SKEDOU ================= -->
+      <div class="project-card">
+
+        <div class="project-text">
+
+          <h3>
+            Skedou
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> profissionais de pet care precisam acompanhar
+              agenda e clientes sem espalhar informações entre ferramentas diferentes.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> centralizei agenda, clientes e automações em
+              uma experiência nativa, estruturada com SwiftUI, SwiftData e Clean Architecture.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> aplicativo publicado na App Store, com uma base
+              escalável para organizar a rotina desses profissionais.
+            </p>
+          </div>
+
+          <div class="role">
+            Desenvolvimento iOS • Arquitetura • UI/UX
+          </div>
+
+          <div class="project-impact">
+            <span>Publicado na App Store</span>
+            <span>Gestão de agenda e clientes</span>
+            <span>Arquitetura escalável</span>
+          </div>
+
           <div class="tech-tags">
             <span class="tech-tag">SwiftUI</span>
             <span class="tech-tag">SwiftData</span>
             <span class="tech-tag">Clean Architecture</span>
           </div>
+
           <div class="project-buttons">
-            <!-- <a href="https://github.com/taissarodrigues" class="btn" target="_blank">GitHub</a> -->
-            <a href="https://apps.apple.com/br/app/skedou/id6754465958
-Skedou" class="btn btn-secondary" target="_blank">App Store</a>
+
+            <a
+              href="https://apps.apple.com/br/app/skedou/id6754465958"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App Store
+            </a>
+
           </div>
         </div>
+
         <div class="project-image">
-          <img src="./img/skedou.png" alt="Skedou">
+
+          <img
+            src="./img/skedou.png"
+            alt="Interface do aplicativo Skedou"
+            loading="lazy"
+          >
+
         </div>
       </div>
 
+      <!-- ================= UNDERLINED ================= -->
       <div class="project-card">
+
         <div class="project-text">
-          <h3>Underlined</h3>
-          <p>
-            Jogo de memória investigativo com pistas narrativas, animações e progressão com StoreKit.
-            Integra GameCenter e CloudKit para conquistas e salvamento na nuvem.
-          </p>
-          <div class="role">Desenvolvimento iOS • UI/UX • Game Design</div>
+
+          <h3>
+            Underlined
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> criar um jogo de memória que não terminasse na
+              repetição das cartas e sustentasse o interesse com narrativa e progressão.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> combinei pistas investigativas, animações e
+              progressão, integrando Game Center, CloudKit e StoreKit à experiência.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> jogo publicado na App Store, com conquistas e
+              dados salvos na nuvem para manter a continuidade entre sessões.
+            </p>
+          </div>
+
+          <div class="role">
+            Desenvolvimento iOS • UI/UX • Game Design
+          </div>
+
+          <div class="project-impact">
+            <span>Publicado na App Store</span>
+            <span>Game Center e CloudKit</span>
+            <span>Progressão com StoreKit</span>
+          </div>
+
           <div class="tech-tags">
             <span class="tech-tag">UIKit</span>
             <span class="tech-tag">SpriteKit</span>
             <span class="tech-tag">StoreKit</span>
-            <span class="tech-tag">GameCenter</span>
+            <span class="tech-tag">Game Center</span>
             <span class="tech-tag">CloudKit</span>
           </div>
+
           <div class="project-buttons">
-            <a href="https://github.com/cauanlgaldino/Underlined.git" class="btn" target="_blank">GitHub</a>
-            <a href="https://apps.apple.com/br/app/underlined/id6745526553
-Underlined" class="btn btn-secondary" target="_blank">App Store</a>
+
+            <a
+              href="https://github.com/cauanlgaldino/Underlined.git"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://apps.apple.com/br/app/underlined/id6745526553"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App Store
+            </a>
+
           </div>
         </div>
+
         <div class="project-image">
-          <img src="./img/underlined.jpeg" alt="Underlined">
+
+          <img
+            src="./img/underlined.jpeg"
+            alt="Interface do jogo Underlined"
+            loading="lazy"
+          >
+
         </div>
       </div>
 
+      <!-- ================= APEGO ================= -->
       <div class="project-card">
+
         <div class="project-text">
-          <h3>Apego</h3>
-          <p>
-            Aplicativo com Machine Learning para identificar peças de roupa.
-            Implementa captura e classificação com CoreML e organização por categorias.
-          </p>
-          <div class="role">Desenvolvimento iOS • Machine Learning • UI/UX</div>
+
+          <h3>
+            Apego
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> organizar peças de roupa exige cadastro manual,
+              mesmo quando a própria imagem já contém boa parte da informação necessária.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> usei Core ML para classificar as peças a partir
+              de fotos e conectei captura, identificação e categorias em um único fluxo.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> aplicativo publicado na App Store que transforma
+              uma imagem em uma peça identificada e organizada por categoria.
+            </p>
+          </div>
+
+          <div class="role">
+            Desenvolvimento iOS • Machine Learning • UI/UX
+          </div>
+
+          <div class="project-impact">
+            <span>Publicado na App Store</span>
+            <span>Classificação com Core ML</span>
+            <span>Organização por categorias</span>
+          </div>
+
           <div class="tech-tags">
             <span class="tech-tag">SwiftUI</span>
-            <span class="tech-tag">CoreML</span>
+            <span class="tech-tag">Core ML</span>
             <span class="tech-tag">Swift</span>
           </div>
+
           <div class="project-buttons">
-            <a href="https://github.com/Dan-Nobre/Apego" class="btn" target="_blank">GitHub</a>
-            <a href="https://apps.apple.com/br/app/apego/id6504960604
-Apego" class="btn btn-secondary" target="_blank">App Store</a>
+
+            <a
+              href="https://github.com/Dan-Nobre/Apego"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://apps.apple.com/br/app/apego/id6504960604"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App Store
+            </a>
+
           </div>
         </div>
+
         <div class="project-image">
-          <img src="./img/ApegoP.png" alt="Apego">
+
+          <img
+            src="./img/ApegoP.png"
+            alt="Interface do aplicativo Apego"
+            loading="lazy"
+          >
+
         </div>
       </div>
 
+      <!-- ================= VISIONOS ================= -->
       <div class="project-card">
+
         <div class="project-text">
-          <h3>Witch Game — VisionOS</h3>
-          <p>
-            Experiência imersiva para Vision Pro com objetos 3D, poções mágicas e gestos naturais.
-            Integra interfaces 2D/3D e otimização espacial.
-          </p>
-          <div class="role">Spatial Computing • Desenvolvimento iOS</div>
+
+          <h3>
+            Witch Game para visionOS
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> adaptar a lógica de um jogo para computação
+              espacial sem tratar o ambiente 3D como uma tela tradicional ampliada.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> combinei interfaces bidimensionais, objetos 3D,
+              poções e gestos naturais usando SwiftUI, visionOS e Reality Composer Pro.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> uma experiência para Apple Vision Pro em que a
+              interação espacial faz parte da mecânica, não apenas da apresentação.
+            </p>
+          </div>
+
+          <div class="role">
+            Spatial Computing • Desenvolvimento Apple
+          </div>
+
+          <div class="project-impact">
+            <span>Experiência visionOS</span>
+            <span>Interação espacial</span>
+            <span>Objetos 3D</span>
+          </div>
+
           <div class="tech-tags">
             <span class="tech-tag">SwiftUI</span>
-            <span class="tech-tag">VisionOS</span>
+            <span class="tech-tag">visionOS</span>
             <span class="tech-tag">Reality Composer Pro</span>
           </div>
+
           <div class="project-buttons">
-            <a href="https://github.com/taissarodrigues/JogodaBruxa" class="btn" target="_blank">GitHub</a>
+
+            <a
+              href="https://github.com/taissarodrigues/JogodaBruxa"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
           </div>
         </div>
+
         <div class="project-image">
-          <img src="./img/jogoDaBruxa 2.png" alt="Witch Game">
+
+          <img
+            src="./img/jogoDaBruxa 2.png"
+            alt="Witch Game para visionOS"
+            loading="lazy"
+          >
+
         </div>
       </div>
 
+      <!-- ================= COCOA TRACK ================= -->
       <div class="project-card">
+
         <div class="project-text">
-          <h3>Cocoa Track</h3>
-          <p>
-            App de check-in para eventos CocoaHeads integrado ao Sympla.
-            Leitura de QR Code e validação em tempo real para organizadores.
-          </p>
-          <div class="role">Desenvolvimento iOS • API Integration</div>
+
+          <h3>
+            Cocoa Track
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> validar participantes de eventos manualmente
+              torna o check-in lento e aumenta a chance de inconsistências.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> conectei a leitura de QR Code à API do Sympla
+              para consultar e validar cada inscrição durante o check-in.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> aplicativo iOS com validação em tempo real para
+              tornar a entrada nos eventos CocoaHeads mais direta e confiável.
+            </p>
+          </div>
+
+          <div class="role">
+            Desenvolvimento iOS • Integração de API
+          </div>
+
+          <div class="project-impact">
+            <span>Validação em tempo real</span>
+            <span>Leitura de QR Code</span>
+            <span>Integração com Sympla</span>
+          </div>
+
           <div class="tech-tags">
             <span class="tech-tag">SwiftUI</span>
             <span class="tech-tag">REST API</span>
             <span class="tech-tag">QR Code Scanner</span>
           </div>
+
           <div class="project-buttons">
-            <a href="https://github.com/izamontenegro/CocoaTrack.git" class="btn" target="_blank">GitHub</a>
+
+            <a
+              href="https://github.com/izamontenegro/CocoaTrack.git"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
           </div>
         </div>
+
         <div class="project-image">
-          <img src="./img/cocoatrack.png" alt="Cocoa Track">
+
+          <img
+            src="./img/cocoatrack.png"
+            alt="Interface do aplicativo Cocoa Track"
+            loading="lazy"
+          >
+
+        </div>
+      </div>
+
+      <!-- ================= DOMINO MATH ================= -->
+      <div class="project-card">
+
+        <div class="project-text">
+
+          <h3>
+            DominoMath
+          </h3>
+
+          <div class="project-case-copy">
+            <p>
+              <strong>O problema:</strong> praticar conceitos matemáticos básicos pode
+              parecer abstrato e pouco convidativo, especialmente em uma experiência infantil.
+            </p>
+
+            <p>
+              <strong>O que decidi:</strong> transformamos as peças de dominó em desafios
+              matemáticos, combinando regras simples, feedback visual e uma interface fácil de usar.
+            </p>
+
+            <p>
+              <strong>Resultado:</strong> aplicativo iOS desenvolvido em equipe durante o
+              Foundation da Apple Developer Academy, com uma experiência lúdica de aprendizagem.
+            </p>
+          </div>
+
+          <div class="role">
+            Desenvolvimento iOS • Educação • Projeto em equipe
+          </div>
+
+          <div class="project-impact">
+            <span>Apple Developer Academy</span>
+            <span>Aprendizado de matemática</span>
+            <span>Jogabilidade com dominó</span>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">SwiftUI</span>
+            <span class="tech-tag">iOS 16.4</span>
+            <span class="tech-tag">Game Design</span>
+          </div>
+
+          <div class="project-buttons">
+            <a
+              href="https://github.com/taissarodrigues/DominoMath"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-image">
+          <img
+            src="./img/DominoMath_Portifolio.png"
+            alt="Interface do aplicativo DominoMath"
+            loading="lazy"
+          >
         </div>
       </div>
 
     </div>
+  </section>
+
+  <!-- ================= MAIS PROJETOS ================= -->
+  <section id="MoreWork">
+
+    <div class="more-work-heading">
+      <div>
+        <span class="eyebrow">Mais projetos</span>
+        <h2>Outros projetos que<br>venho construindo.</h2>
+      </div>
+
+      <p>
+        Projetos menores, mas que mostram o mesmo raciocínio: entender o problema
+        antes de escolher a stack.
+      </p>
+    </div>
+
+    <div class="work-log">
+      <a href="https://github.com/taissarodrigues/studydash-fullstack" target="_blank" rel="noopener noreferrer">
+        <span class="work-number">01</span>
+        <div class="work-title">
+          <strong>StudyDash</strong>
+          <span>Dashboard de estudos com painel de progresso</span>
+        </div>
+        <small>Ruby on Rails · React · MySQL · API REST</small>
+        <i aria-hidden="true">↗</i>
+      </a>
+
+      <a href="https://github.com/taissarodrigues/weatherly-dashboard" target="_blank" rel="noopener noreferrer">
+        <span class="work-number">02</span>
+        <div class="work-title">
+          <strong>Weatherly</strong>
+          <span>Consulta de clima e previsão com visualização de dados</span>
+        </div>
+        <small>React · TypeScript · Vite · Recharts · APIs públicas</small>
+        <i aria-hidden="true">↗</i>
+      </a>
+
+      <a href="https://github.com/taissarodrigues/AnuariodoCeara" target="_blank" rel="noopener noreferrer">
+        <span class="work-number">03</span>
+        <div class="work-title">
+          <strong>Anuário do Ceará</strong>
+          <span>Publicação institucional digital</span>
+        </div>
+        <small>HTML · CSS · JavaScript · Bootstrap</small>
+        <i aria-hidden="true">↗</i>
+      </a>
+
+    </div>
+
   </section>
 
   <!-- ================= CONTATO ================= -->
   <section id="Contact">
+
     <div class="contact-container">
-      <h2 class="section-title">Vamos conversar?</h2>
+
+      <figure class="contact-portrait">
+        <img
+          src="./img/foto-perfil.jpg"
+          alt="Retrato de Taissa Rodrigues"
+          loading="lazy"
+        >
+      </figure>
+
+      <span class="eyebrow">
+        Contato
+      </span>
+
+      <h2 class="section-title">
+        Aberta a novos desafios. Vamos conversar?
+      </h2>
+
+      <p>
+      Estou em busca de um lugar pra aplicar o que venho aprendendo na prática, de preferência em times de Front-End, Mobile ou iOS.
+      Se meu perfil conversar com o que vocês precisam, me chama.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="mailto:taissavrpdev@gmail.com"
+          class="btn"
+        >
+          Entrar em contato
+        </a>
+
+        <a
+          href="./img/CV/Taissa_Rodrigues_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary"
+        >
+          Ver currículo
+        </a>
+
+      </div>
 
       <div class="about-contact-container">
+
         <div class="contact-info-item">
-          <img src="./img/email.png" class="contact-icon">
+
+          <img
+            src="./img/email.png"
+            alt=""
+            class="contact-icon"
+          >
+
           <div>
-            <strong>Email</strong><br>
+
+            <strong>
+              Email
+            </strong>
+
+            <br>
+
             <a href="mailto:taissavrpdev@gmail.com">
               taissavrpdev@gmail.com
             </a>
+
           </div>
         </div>
 
         <div class="contact-info-item">
-          <img src="./img/linkedin.png" class="contact-icon">
+
+          <img
+            src="./img/linkedin.png"
+            alt=""
+            class="contact-icon"
+          >
+
           <div>
-            <strong>LinkedIn</strong><br>
-            <a href="https://www.linkedin.com/in/taissa-rodrigues-dev/" target="_blank">
+
+            <strong>
+              LinkedIn
+            </strong>
+
+            <br>
+
+            <a
+              href="https://www.linkedin.com/in/taissa-rodrigues-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               in/taissa-rodrigues-dev
             </a>
+
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ================= FOOTER ================= -->
   <footer>
-    <p>Copyright © 2026 Taissa Rodrigues.</p>
+    <p>
+      © 2026 Taissa Rodrigues. Todos os direitos reservados.
+    </p>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 
 </html>
