@@ -11,10 +11,6 @@
     savedTheme = null;
   }
 
-  const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
-
   const applyTheme = (theme) => {
     const isDark = theme === 'dark';
     root.dataset.theme = theme;
@@ -27,7 +23,7 @@
     });
   };
 
-  applyTheme(savedTheme || preferredTheme);
+  applyTheme(savedTheme || 'light');
 
   toggles.forEach((toggle) => {
     toggle.addEventListener('click', () => {
